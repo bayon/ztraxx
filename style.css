@@ -1,0 +1,280 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    font-family: open sans, sans-serif;
+    /* width:100%;
+    height:100%; */
+     background-image: url("./img/grass-0.0.jpg"); 
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container. */
+    height: 100vh;
+    background-color: #fff;
+}
+
+
+.page-container {
+    padding: 10px;
+    width: 100vw
+}
+.display-wrapper{
+    background-image: url("./img/grass-0.0.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    height: 25vh;
+}
+
+.appForm{
+    background-color:rgba(0,0,0,.5);
+    padding:50px;
+    border-radius:10px;
+}
+
+input {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.grid-c {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: .5em 0 .5em 0;
+}
+
+.grid-i {
+    text-align: left;
+    padding: .5em;
+}
+
+.appInput {
+    font-size: 1em;
+    padding: 0.5em;
+    flex-grow: 1;
+    outline: none;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.appButton {
+    font-size: 1em;
+    padding: 0.5em;
+    margin: 0.5em 0 0.5em 0;
+    color: #FFF;
+    border-radius: 6px;
+    outline: none;
+    background: darkgoldenrod;
+    width: 50%;
+}
+
+.appLabel {
+    color: #fff;
+}
+
+.colorSquare {
+    height: 15px;
+    width: 45px;
+    margin: .25em 0 .25em 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #000;
+}
+.wooden {
+    background:tan;
+}
+.red {
+    background: #600f0f;
+}
+
+.blue {
+    background: #162abf;
+}
+
+.orange {
+    background: orange;
+}
+
+.green {
+    background: #1c6611;
+}
+
+.purple {
+    background: purple;
+}
+
+.yellow {
+    background: yellow;
+}
+.white {
+    background: #fff;
+}
+
+.bat-middle-overlay {
+    color: #fff;
+    position: absolute;/*relative originally*/
+     top: 40%; /* default important*/
+    left: 35%; /* default important*/
+    font-size: 1.5em;  /* default important*/
+    z-index:9999;
+    text-shadow: 1px 1px #000;
+}
+ 
+.bat-handle{
+    width:852px; 
+    height:319px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position:absolute; */
+}
+
+.bat-ring{
+    width:26px;
+    height:319px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position:absolute; */
+}
+.bat-barrel{
+     width:722px;
+    height:319px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position:absolute; */
+}
+ 
+.bat-handle-highlights{
+    background-image: url("./img/slice_layers/highlight-handle.5.png");
+    width:852px;
+    height:319px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute; 
+    top:0;left:0;
+}
+.bat-ring-highlights{
+    background-image: url("./img/slice_layers/highlight-ring.5.png");
+    width:26px;
+    height:319px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute; 
+    top:0;left:0;
+}
+.bat-barrel-highlights{
+    background-image: url("./img/slice_layers/highlight-barrel.5.png");
+    width:722px;
+    height:319px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute; 
+    top:0;left:0;
+}
+.bat-handle-wooden {
+    background-image: url("./img/slice_layers/wooden-handle.png");
+}
+.bat-handle-white {
+    background-image: url("./img/slice_layers/white-handle.png");
+}
+.bat-handle-blue {
+    background-image: url("./img/slice_layers/blue-handle.png");
+}
+
+.bat-ring-wooden {
+    background-image: url("./img/slice_layers/wooden-ring.png");
+}
+.bat-ring-white {
+    background-image: url("./img/slice_layers/white-ring.png");
+}
+.bat-ring-blue {
+    background-image: url("./img/slice_layers/blue-ring.png");
+}
+
+
+.bat-barrel-wooden {
+    background-image: url("./img/slice_layers/wooden-barrel.png");
+}
+.bat-barrel-white {
+    background-image: url("./img/slice_layers/white-barrel.png");
+}
+.bat-barrel-blue {
+    background-image: url("./img/slice_layers/blue-barrel.png");
+}
+
+.img-container{
+    padding:0 0 0 0 ;
+    margin:0 0 0 0 ;
+}
+
+.wood-background {
+    background-image: url("./img/wood-background.png");
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+}
+
+.flex-c {
+    display: flex;
+}
+
+.bat-handle-old {
+    width: 186px;
+    height: 159px;
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+}
+
+.bat-tip-old {
+    width: 91px;
+    height: 159px;
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+}
+
+.bat-middle-old {
+    width: 186px;
+    height: 159px;
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+}
+
+@media only screen and (max-width: 600px) {
+    .grid-i {
+        padding: 5px;
+    }
+}
+
+.appFormButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}

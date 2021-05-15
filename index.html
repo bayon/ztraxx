@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prototype</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+</head>
+
+<body>
+    <div class="page-container">
+
+
+        <!-- FORM ==================================  -->
+        <form id="form1" class="appForm ">
+
+            <div class="grid-c ">
+                <div class="grid-i">
+                    <label class="appLabel">Nick Name:</label>
+                    <input class="appInput" type="text" placeholder="The Stinger" name="textOverlayInput"
+                        id="textOverlayInput" />
+                </div>
+            </div>
+            <!-- HANDLE OPTIONS ======================================== -->
+            <div class="grid-c">
+                <div class="grid-i">
+                    <label class="appLabel" for="radiogroup">
+                        Handle:
+                        <div class="colorSquare wooden">
+                            <input type="radio" id="wooden" name="handleColorInput" value="wooden">
+                        </div>
+                        <div class="colorSquare blue">
+                            <input type="radio" id="blue" name="handleColorInput" value="blue">
+                        </div>
+                        <div class="colorSquare white">
+                            <input type="radio" id="white" name="handleColorInput" value="white">
+                        </div>
+                    </label>
+                </div>
+            
+
+             <!-- RING OPTIONS ======================================== -->
+             
+                <div class="grid-i">
+                    <label class="appLabel" for="radiogroup">
+                        Ring:
+                        <div class="colorSquare wooden">
+                            <input type="radio" id="wooden" name="ringColorInput" value="wooden">
+                        </div>
+                        <div class="colorSquare blue">
+                            <input type="radio" id="blue" name="ringColorInput" value="blue">
+                        </div>
+                        <div class="colorSquare white">
+                            <input type="radio" id="white" name="ringColorInput" value="white">
+                        </div>
+                    </label>
+                </div>
+            
+
+            <!-- BARREL OPTIONS ======================================== -->
+            
+                <div class="grid-i">
+                    <label class="appLabel" for="radiogroup">
+                        Barrel:
+                        <div class="colorSquare wooden">
+                            <input type="radio" id="wooden" name="barrelColorInput" value="wooden">
+                        </div>
+                        <div class="colorSquare blue">
+                            <input type="radio" id="blue" name="barrelColorInput" value="blue">
+                        </div>
+                        <div class="colorSquare white">
+                            <input type="radio" id="white" name="barrelColorInput" value="white">
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+
+            <div class="grid-c appFormButtons">
+                <button class="appButton">Customize</button>
+            </div>
+
+        </form>
+
+        <!-- DISPLAY ================================== -->
+
+        <div class="flex-c display-wrapper">
+            <div id="handle-wrapper" style="position:relative; ">
+                <div id="batHandleImage" class=" bat-handle bat-handle-wooden img-container"> </div>
+                <div id="highlights1" class="bat-handle-highlights"></div>
+            </div>
+            <div id="ring-wrapper" style="position:relative; ">
+                <div id="batRingImage" class=" bat-ring bat-ring-wooden img-container"> </div>
+                <div id="highlights2" class="bat-ring-highlights"></div>
+            </div>
+            <div id="barrel-wrapper" style="position:relative; ">
+                <div id="batBarrelImage" class=" bat-barrel bat-barrel-wooden img-container">
+                    <div id="moniker" class="overlay bat-middle-overlay"></div>
+                </div>
+                <div id="highlights3" class="bat-barrel-highlights"></div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+<script src="./js/main.js"></script>
+<script src="./js/valid-x.js"></script>
+<script src="./js/http-x.js"></script>
+<script></script>
+
+</html>
