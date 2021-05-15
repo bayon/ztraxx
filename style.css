@@ -183,7 +183,7 @@ input {
     top:0;left:0;
 }
 .bat-handle-wooden {
-    background-image: url("./img/slice_layers/wooden-handle.png");
+    background-image: url("./img/slice_layers/wooden-handle-lvl.png");
 }
 .bat-handle-white {
     background-image: url("./img/slice_layers/white-handle.png");
@@ -193,7 +193,7 @@ input {
 }
 
 .bat-ring-wooden {
-    background-image: url("./img/slice_layers/wooden-ring.png");
+    background-image: url("./img/slice_layers/wooden-ring-lvl.png");
 }
 .bat-ring-white {
     background-image: url("./img/slice_layers/white-ring.png");
@@ -204,7 +204,7 @@ input {
 
 
 .bat-barrel-wooden {
-    background-image: url("./img/slice_layers/wooden-barrel.png");
+    background-image: url("./img/slice_layers/wooden-barrel-lvl.png");
 }
 .bat-barrel-white {
     background-image: url("./img/slice_layers/white-barrel.png");
