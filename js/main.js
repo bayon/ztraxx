@@ -28,7 +28,7 @@ var mf = "1.5em";
 var ww = window.innerWidth;
  
 if(ww <= 600){
-  resizeDisplay(5,"15%","20%","1em")
+  resizeDisplay(5,"15%","25%","1em")
 } else if ( ww <= 400 ){
   resizeDisplay(7,mt,ml,mf)
 } else{
@@ -45,7 +45,7 @@ window.addEventListener('resize', function(event) {
 
   //console.log("ww:",ww);
   if(ww <= 600){
-    resizeDisplay(5,"15%","20%","1em")
+    resizeDisplay(5,"15%","25%","1em")
   } else if ( ww <= 400 ){
     resizeDisplay(7,mt,ml,mf)
   } else{

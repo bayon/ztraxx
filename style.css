@@ -116,15 +116,28 @@ input {
     background: #fff;
 }
 
-.bat-middle-overlay {
+
+
+#moniker{
     color: #fff;
     position: absolute;/*relative originally*/
-     top: 40%; /* default important*/
-    left: 35%; /* default important*/
+   /*  top: 40%; *//* default important*/
+   /* left: 35%; */ /* default important*/
     font-size: 1.5em;  /* default important*/
     z-index:9999;
     text-shadow: 1px 1px #000;
+
+ 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute; 
+    top:0;left:0; 
+   
+
+
 }
+ 
  
 .bat-handle{
     width:852px; 
