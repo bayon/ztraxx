@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
+
 </head>
 
 <body>
@@ -13,6 +14,7 @@
 
 
         <!-- FORM ==================================  -->
+        <div class="form-wrapper">
         <form id="form1" class="appForm ">
 
             <div class="grid-c ">
@@ -24,7 +26,7 @@
             </div>
             <!-- HANDLE OPTIONS ======================================== -->
             <div class="grid-c">
-                <div class="grid-i">
+                <!-- <div class="grid-i">
                     <label class="appLabel" for="radiogroup">
                         Handle:
                         <div class="colorSquare wooden">
@@ -37,12 +39,23 @@
                             <input type="radio" id="white" name="handleColorInput" value="white">
                         </div>
                     </label>
-                </div>
+                </div> -->
+                <div class="grid-i">
+                    <label class="appLabel">
+                        Handle:
+                        <select id="handleColorInput" class="appInput">
+                            <option value="wooden">wooden</option>
+                            <option value="blue">blue</option>
+                            <option value="white">white</option>
+
+                        </select>
+                    </label>
+                </div> 
             
 
              <!-- RING OPTIONS ======================================== -->
              
-                <div class="grid-i">
+                <!-- <div class="grid-i">
                     <label class="appLabel" for="radiogroup">
                         Ring:
                         <div class="colorSquare wooden">
@@ -55,12 +68,23 @@
                             <input type="radio" id="white" name="ringColorInput" value="white">
                         </div>
                     </label>
-                </div>
+                </div> -->
+                <div class="grid-i">
+                    <label class="appLabel">
+                        Ring:
+                        <select id="ringColorInput" class="appInput">
+                            <option value="wooden">wooden</option>
+                            <option value="blue">blue</option>
+                            <option value="white">white</option>
+
+                        </select>
+                    </label>
+                </div> 
             
 
             <!-- BARREL OPTIONS ======================================== -->
             
-                <div class="grid-i">
+                <!-- <div class="grid-i">
                     <label class="appLabel" for="radiogroup">
                         Barrel:
                         <div class="colorSquare wooden">
@@ -73,7 +97,18 @@
                             <input type="radio" id="white" name="barrelColorInput" value="white">
                         </div>
                     </label>
-                </div>
+                </div> -->
+                <div class="grid-i">
+                    <label class="appLabel">
+                        Barrel:
+                        <select id="barrelColorInput" class="appInput">
+                            <option value="wooden">wooden</option>
+                            <option value="blue">blue</option>
+                            <option value="white">white</option>
+
+                        </select>
+                    </label>
+                </div> 
             </div>
 
 
@@ -82,7 +117,7 @@
             </div>
 
         </form>
-
+    </div>
         <!-- DISPLAY ================================== -->
 
         <div class="flex-c display-wrapper">
@@ -96,10 +131,11 @@
             </div>
             <div id="barrel-wrapper" style="position:relative; ">
                 <div id="batBarrelImage" class=" bat-barrel bat-barrel-wooden img-container"></div>
-                <div id="moniker" ></div>
+               
                 <div id="highlights3" class="bat-barrel-highlights"></div>
+                <div id="moniker"  class="moniker-text"></div>
             </div>
-
+            <div class="zonetraxx-logo"></div>
 
         </div>
     </div>

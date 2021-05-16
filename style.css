@@ -8,11 +8,11 @@ body {
     font-family: open sans, sans-serif;
     /* width:100%;
     height:100%; */
-     background-image: url("./img/grass-0.0.jpg"); 
-    background-position: center;
-    /* Center the image */
+     /* background-image: url("./img/grass-0.0.jpg"); 
+    background-position: center; */
+    
     background-repeat: no-repeat;
-    /* Do not repeat the image */
+    
     background-size: cover;
     /* Resize the background image to cover the entire container. */
     height: 100vh;
@@ -21,22 +21,40 @@ body {
 
 
 .page-container {
-    padding: 10px;
+    padding: 0px;
     width: 100vw
 }
+
+
+.form-wrapper{
+    background-color:rgba(255,255,255,1);
+    width: 100vw;
+    height:100vh;
+     
+}
+
+
 .display-wrapper{
-    background-image: url("./img/grass-0.0.jpg");
+     background-image: url("./img/grass-0.0.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    /* Do not repeat the image */
-    background-size: cover;
+    background-size: cover; 
+    text-align:center;
+    width:100%;
+    /* background-color:rgba(255,255,255,.95); */
+    box-shadow:2px 2px 2px #000;
     height: 25vh;
+    position: fixed;
+    top:0;
+    left:0;
 }
 
 .appForm{
-    background-color:rgba(0,0,0,.5);
-    padding:50px;
-    border-radius:10px;
+    margin-top:200px;
+    padding:10px;
+    border-radius:0px; 
+   
+   
 }
 
 input {
@@ -47,7 +65,7 @@ input {
 .grid-c {
     display: grid;
     grid-template-columns: auto auto auto;
-    margin: .5em 0 .5em 0;
+    margin: .5em auto .5em auto;
 }
 
 .grid-i {
@@ -60,8 +78,9 @@ input {
     padding: 0.5em;
     flex-grow: 1;
     outline: none;
-    border-radius: 6px;
+    border-radius: 0px;
     width: 100%;
+    border: 1px solid #ccc;
 }
 
 .appButton {
@@ -69,21 +88,22 @@ input {
     padding: 0.5em;
     margin: 0.5em 0 0.5em 0;
     color: #FFF;
-    border-radius: 6px;
+    border-radius: 0px;
     outline: none;
-    background: darkgoldenrod;
+    background: #555;
     width: 50%;
+    border: 1px solid #ccc;
 }
 
 .appLabel {
-    color: #fff;
+    color: #555;
 }
 
 .colorSquare {
     height: 15px;
     width: 45px;
     margin: .25em 0 .25em 0;
-    border-radius: 10px;
+    border-radius: 0px;
     box-shadow: 2px 2px 2px #000;
 }
 .wooden {
@@ -118,26 +138,8 @@ input {
 
 
 
-#moniker{
-    color: #fff;
-    position: absolute;/*relative originally*/
-   /*  top: 40%; *//* default important*/
-   /* left: 35%; */ /* default important*/
-    font-size: 1.5em;  /* default important*/
-    z-index:9999;
-    text-shadow: 1px 1px #000;
-
- 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position:absolute; 
-    top:0;left:0; 
-   
 
 
-}
- 
  
 .bat-handle{
     width:852px; 
@@ -145,7 +147,6 @@ input {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* position:absolute; */
 }
 
 .bat-ring{
@@ -154,7 +155,6 @@ input {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* position:absolute; */
 }
 .bat-barrel{
      width:722px;
@@ -162,9 +162,17 @@ input {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* position:absolute; */
+    
 }
- 
+
+ .zonetraxx-logo{
+    background-image: url("./img/zonetraxx-512.jpeg");
+    width:100px;
+    height:auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+ }
 .bat-handle-highlights{
     background-image: url("./img/slice_layers/highlight-handle.5.png");
     width:852px;
@@ -195,6 +203,28 @@ input {
     position:absolute; 
     top:0;left:0;
 }
+
+ 
+
+#moniker{
+    z-index:9999;
+    text-shadow: 1px 1px #000;
+     color: #fff;
+    position: absolute; 
+    font-size: 1.5em;   
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute; 
+    top:0;left:0;  
+ 
+
+}
+
+ 
+ 
+
 .bat-handle-wooden {
     background-image: url("./img/slice_layers/wooden-handle-lvl.png");
 }
@@ -234,49 +264,15 @@ input {
 .wood-background {
     background-image: url("./img/wood-background.png");
     background-position: center;
-    /* Center the image */
     background-repeat: no-repeat;
-    /* Do not repeat the image */
     background-size: cover;
-    /* Resize the background image to cover the entire container */
 }
 
 .flex-c {
     display: flex;
 }
 
-.bat-handle-old {
-    width: 186px;
-    height: 159px;
-    background-position: center;
-    /* Center the image */
-    background-repeat: no-repeat;
-    /* Do not repeat the image */
-    background-size: cover;
-    /* Resize the background image to cover the entire container */
-}
-
-.bat-tip-old {
-    width: 91px;
-    height: 159px;
-    background-position: center;
-    /* Center the image */
-    background-repeat: no-repeat;
-    /* Do not repeat the image */
-    background-size: cover;
-    /* Resize the background image to cover the entire container */
-}
-
-.bat-middle-old {
-    width: 186px;
-    height: 159px;
-    background-position: center;
-    /* Center the image */
-    background-repeat: no-repeat;
-    /* Do not repeat the image */
-    background-size: cover;
-    /* Resize the background image to cover the entire container */
-}
+ 
 
 @media only screen and (max-width: 600px) {
     .grid-i {
@@ -287,7 +283,8 @@ input {
 .appFormButtons {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     height: 100%;
+    padding:10px;
 }

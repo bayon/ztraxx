@@ -22,7 +22,7 @@ const highlights3 = document.getElementById("highlights3");
  
 
 // var rr = 3;
-var mt = "25%";
+var mt = "45%";
 var ml = "30%";
 var mf = "1.5em";
 var ww = window.innerWidth;
@@ -32,14 +32,14 @@ if(ww <= 600){
 } else if ( ww <= 400 ){
   resizeDisplay(7,mt,ml,mf)
 } else{
-  resizeDisplay(3,mt,ml,mf)
+  resizeDisplay(2,mt,ml,mf)
 }
 
 window.addEventListener('resize', function(event) {
  
   // var rr = 3;
   var ww = window.innerWidth;
-  var mt = "25%";
+  var mt = "45%";
   var ml = "30%";
   var mf = "1.5em";
 
@@ -49,7 +49,7 @@ window.addEventListener('resize', function(event) {
   } else if ( ww <= 400 ){
     resizeDisplay(7,mt,ml,mf)
   } else{
-    resizeDisplay(3,mt,ml,mf)
+    resizeDisplay(2,mt,ml,mf)
   }
   
   
@@ -73,6 +73,14 @@ function resizeDisplay(rr,mt,ml,mf){
   moniker.style.top = mt;
   moniker.style.left = ml;
   moniker.style.fontSize = mf;
+
+ var ot = highlights3.offsetTop;
+ var ol = highlights3.offsetLeft;
+ console.log('ot and ol:',ot, ol)
+ var mot = moniker.offsetTop;
+ var mol = moniker.offsetLeft;
+ console.log('mot, mol:',mot,mol)
+
 
 }
 
